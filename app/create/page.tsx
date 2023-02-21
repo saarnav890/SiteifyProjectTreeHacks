@@ -94,18 +94,18 @@ return (
               .max(40, 'Must be 40 characters or less')
               .required('Required'),
               job: Yup.string()
-              .max(30, 'Must be 30 characters or less')
+              .max(50, 'Must be 50 characters or less')
               .required('Required'),
 
             
             email: Yup.string().email('Invalid email address').required('Required'),
 
             skills: Yup.string()
-              .max(40, 'Must be 40 characters or less')
+              .max(80, 'Must be 80 characters or less')
               .required('Required'),
 
               hobbies: Yup.string()
-              .max(40, 'Must be 40 characters or less')
+              .max(80, 'Must be 80 characters or less')
               .required('Required'),
 
               style: Yup.string()

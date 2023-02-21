@@ -151,10 +151,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     'private': false
   })
   } catch {
-    console.log('repo created')
+    console.error('Errored here')
   }
 
-  const a = await setTimeout(2000)
+  const a = await setTimeout(1000)
   console.log('fetch SHA')
   const repoData = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
     owner: username,
